@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.deployment.name }}
+  labels:
+    app: {{ .Values.deployment.app }}
+spec:
+  replicas: {{ .Values.deployment.replicas }}
+  selector:
+    matchLabels:
+      app: {{ .Values.deployment.app }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.deployment.app }}
+    spec:
+      containers:
+      - name: {{ .Values.deployment.app }}
+        image: {{ .Values.deployment.image }}
+        ports:
+          - containerPort: {{ .Values.deployment.containerPort }}
+        env:
+          - name: {{ .Values.deployment.secretName }}
+            valueFrom:
+              secretKeyRef:
+                name: {{ .Values.deployment.secretKeyRefName }}
+                key: {{ .Values.deployment.secretKeyRefKey }}
+        resources:
+          requests:
+            memory: {{ .Values.deployment.requestMemory }}
+            cpu: {{ .Values.deployment.requestCpu }}
+          limits:
+            memory: {{ .Values.deployment.limitsMemory }}
+            cpu: {{ .Values.deployment.limitsCpu }}
