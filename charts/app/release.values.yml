@@ -1,0 +1,13 @@
+image:
+  repository: 751307794059.dkr.ecr.eu-west-3.amazonaws.com/release/1.0:1.0.0
+
+ingress:
+  class: nginx
+  issuer: letsencrypt-test
+  name: ingress-star-app
+  host1: "www.iiig3t-g00diii.tk"
+  host2: "iiig3t-g00diii.tk"
+  secretName: tls-secret-test
+
+deployment:
+  image: 751307794059.dkr.ecr.eu-west-3.amazonaws.com/release/1.0:1.0.0
