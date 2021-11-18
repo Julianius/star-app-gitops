@@ -1,5 +1,5 @@
 image:
-  repository: 751307794059.dkr.ecr.eu-west-3.amazonaws.com/release/1.0:1.0.0
+  repository: 751307794059.dkr.ecr.eu-west-3.amazonaws.com/star-app:release-1.0.1
 
 ingress:
   class: nginx
@@ -10,4 +10,4 @@ ingress:
   secretName: tls-secret-test
 
 deployment:
-  image: 751307794059.dkr.ecr.eu-west-3.amazonaws.com/release/1.0:1.0.0
+  image: 751307794059.dkr.ecr.eu-west-3.amazonaws.com/star-app:release-1.0.1
