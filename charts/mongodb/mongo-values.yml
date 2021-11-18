@@ -1,0 +1,10 @@
+architecture: replicaset
+replicaCount: 2
+persistence:
+  storageClass: 'standard'
+auth:
+  enabled: true
+  rootPassword: other
+  username: test
+  password: test
+  database: restdb
