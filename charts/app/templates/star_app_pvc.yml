@@ -12,7 +12,7 @@ metadata:
 provisioner: {{ .Values.pvc.provisioner }}
 parameters:
   type: {{ .Values.pvc.type }}
-
+#
 # Can also be 'Retain' but we choose delete so we don't accrue volumes during testing.
 reclaimPolicy: {{ .Values.pvc.reclaimPolicy }}
 allowVolumeExpansion: {{ .Values.pvc.allowVolumeExpansion }}
