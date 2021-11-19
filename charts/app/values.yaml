@@ -40,14 +40,14 @@ issuer:
   class: nginx
 
 pvc:
-  name: standard
+  name: "standard"
   annotationIsDefaultClass: "true"
-  provisioner: kubernetes.io/aws-ebs
-  type: gp2
-  reclaimPolicy: Delete
-  allowVolumeExpansion: true
-  mountOptions: debug
-  volumeBindingMode: Immediate
+  provisioner: "kubernetes.io/aws-ebs"
+  type: "gp2"
+  reclaimPolicy: "Delete"
+  allowVolumeExpansion: "true"
+  mountOptions: "debug"
+  volumeBindingMode: "Immediate"
 
 
 secret:
