@@ -6,7 +6,7 @@ metadata:
 
   # Tell k8s this is our default storageClass
   annotations:
-    storageclass.kubernetes.io/is-default-class: {{ .Values.pvc.annotationIsDefaultClass }}
+    storageclass.kubernetes.io/is-default-class: {{ .Values.pvc.annotationIsDefaultClass | quote }}
 
 # Use the EBS backend
 provisioner: {{ .Values.pvc.provisioner }}
