@@ -1,9 +1,0 @@
-apiVersion: v1 
-kind: ConfigMap 
-metadata:
-  name:  {{ .Values.configmap.name }}
-data:
-  PORT: {{ .Values.configmap.port | quote }}
-  LOGLEVEL: {{ .Values.configmap.loglevel | quote }}
-  PERSIST: {{ .Values.configmap.persist | quote }}
-  DBNAME: {{ .Values.configmap.dbname | quote }}
