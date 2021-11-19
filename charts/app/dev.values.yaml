@@ -1,0 +1,13 @@
+image:
+  repository: 751307794059.dkr.ecr.eu-west-3.amazonaws.com/star-app:dev
+
+ingress:
+  class: nginx
+  issuer: letsencrypt-dev-test
+  name: ingress-star-app
+  host1: "dev.iiig3t-g00diii.tk"
+  host2: "www.dev.iiig3t-g00diii.tk"
+  secretName: tls-secret-dev-test
+
+deployment:
+  image: 751307794059.dkr.ecr.eu-west-3.amazonaws.com/star-app:dev
