@@ -1,5 +1,5 @@
 apiVersion: v2
-name: star_app_nginx
+name: star-app-nginx
 description: A star app nginx chart
 
 type: application
