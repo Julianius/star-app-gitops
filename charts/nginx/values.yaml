@@ -1,0 +1,55 @@
+image:
+  repository: 751307794059.dkr.ecr.eu-west-3.amazonaws.com/star-app:latest
+  pullPolicy: Always
+  tag: ""
+
+service:
+  name: star-app
+  type: LoadBalancer
+  port: 5000
+  selector: star-app
+
+deployment:
+  name: star-app
+  app: star-app
+  image: 751307794059.dkr.ecr.eu-west-3.amazonaws.com/star-app:latest
+  containerPort: 5000
+  configMapRef: app-config
+  secretName: MONGODB_URL
+  secretKeyRefName: mongodburl
+  secretKeyRefKey: MONGODB_URL
+  replicas: 1
+  requestMemory: "64Mi"
+  requestCpu: "250m"
+  limitsMemory: "128Mi"
+  limitsCpu: "500m"
+
+ingress:
+  class: nginx
+  issuer: letsencrypt-test
+  name: ingress-star-app
+  host1: "testing.iiig3t-g00diii.tk"
+  host2: "www.testing.iiig3t-g00diii.tk"
+  secretName: tls-secret-test
+
+issuer:
+  name: letsencrypt-test
+  server: " https://acme-staging-v02.api.letsencrypt.org/directory"
+  email: "vjulianiusv@gmail.com"
+  privateKeySecretRefName: letsencrypt-test
+  class: nginx
+
+pvc:
+  name: "standard"
+  annotationIsDefaultClass: "true"
+  provisioner: "kubernetes.io/aws-ebs"
+  type: "gp2"
+  reclaimPolicy: "Delete"
+  allowVolumeExpansion: "true"
+  mountOptions: "debug"
+  volumeBindingMode: "Immediate"
+
+
+secret:
+  name: mongodburl
+  mongodburl: bW9uZ29kYjovL3Rlc3Q6dGVzdEBtb25nb2RiLTAubW9uZ29kYi1oZWFkbGVzczoyNzAxNyxtb25nb2RiLTEubW9uZ29kYi1oZWFkbGVzczoyNzAxNy9yZXN0ZGI/YXV0aFNvdXJjZT1yZXN0ZGI=

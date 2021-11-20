@@ -11,3 +11,6 @@ ingress:
 
 deployment:
   image: 751307794059.dkr.ecr.eu-west-3.amazonaws.com/star-app:release-1.0.5
+
+#pvc:
+#  name: "standard-release"

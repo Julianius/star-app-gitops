@@ -1,0 +1,13 @@
+architecture: replicaset
+replicaCount: 2
+persistence:
+  storageClass: 'standard-dev'
+auth:
+  enabled: true
+  rootPassword: other
+  username: test
+  password: test
+  database: restdb
+
+pvc:
+  name: "standard-dev"

@@ -1,0 +1,21 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  # We can use any name so long as we reference it correctly
+  name: {{ .Values.pvc.name }}
+
+  # Tell k8s this is our default storageClass
+  annotations:
+    storageclass.kubernetes.io/is-default-class: {{ .Values.pvc.annotationIsDefaultClass | quote }}
+
+# Use the EBS backend
+provisioner: {{ .Values.pvc.provisioner }}
+parameters:
+  type: {{ .Values.pvc.type }}
+#
+# Can also be 'Retain' but we choose delete so we don't accrue volumes during testing.
+reclaimPolicy: {{ .Values.pvc.reclaimPolicy }}
+allowVolumeExpansion: {{ .Values.pvc.allowVolumeExpansion }}
+mountOptions:
+  - {{ .Values.pvc.mountOptions }}
+volumeBindingMode: {{ .Values.pvc.volumeBindingMode }}

@@ -1671,3 +1671,13 @@ metrics:
     ##       summary: High request latency
     ##
     rules: {}
+    
+pvc:
+  name: "standard"
+  annotationIsDefaultClass: "true"
+  provisioner: "kubernetes.io/aws-ebs"
+  type: "gp2"
+  reclaimPolicy: "Delete"
+  allowVolumeExpansion: "true"
+  mountOptions: "debug"
+  volumeBindingMode: "Immediate"
