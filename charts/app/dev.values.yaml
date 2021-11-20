@@ -13,7 +13,7 @@ deployment:
   image: 751307794059.dkr.ecr.eu-west-3.amazonaws.com/star-app:dev
 
 secret:
-  mongodburl: bW9uZ29kYjovL3Rlc3Q6dGVzdEBtb25nb2RiLWRldi0wLm1vbmdvZGItaGVhZGxlc3M6MjcwMTcsbW9uZ29kYi1kZXYtMS5tb25nb2RiLWhlYWRsZXNzOjI3MDE3L3Jlc3RkYj9hdXRoU291cmNlPXJlc3RkYg==
+  mongodburl: bW9uZ29kYjovL3Rlc3Q6dGVzdEBtb25nb2RiLWRldi0wLm1vbmdvZGItZGV2LWhlYWRsZXNzOjI3MDE3LG1vbmdvZGItZGV2LTEubW9uZ29kYi1kZXYtaGVhZGxlc3M6MjcwMTcvcmVzdGRiP2F1dGhTb3VyY2U9cmVzdGRi
 
 
   
