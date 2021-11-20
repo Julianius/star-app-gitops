@@ -14,7 +14,3 @@ deployment:
 
 secret:
   mongodburl: bW9uZ29kYjovL3Rlc3Q6dGVzdEBtb25nb2RiLXN0Zy0wLm1vbmdvZGItc3RnLWhlYWRsZXNzOjI3MDE3LG1vbmdvZGItc3RnLTEubW9uZ29kYi1zdGctaGVhZGxlc3M6MjcwMTcvcmVzdGRiP2F1dGhTb3VyY2U9cmVzdGRi
-
-
-#pvc:
-#  name: "standard-stg"
