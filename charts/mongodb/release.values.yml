@@ -11,3 +11,10 @@ auth:
 
 pvc:
   name: "standard-release"
+
+metrics:
+  enabled: true
+  serviceMonitor:
+    enabled: true
+    additionalLabels:
+      monitoring-platform: core-prometheus
