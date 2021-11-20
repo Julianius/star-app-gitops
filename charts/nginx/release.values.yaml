@@ -1,5 +1,5 @@
 image:
-  repository: 751307794059.dkr.ecr.eu-west-3.amazonaws.com/star-app-nginx:release-1.0.5
+  repository: 751307794059.dkr.ecr.eu-west-3.amazonaws.com/star-app-nginx:release-1.0.7
 
 ingress:
   class: nginx
