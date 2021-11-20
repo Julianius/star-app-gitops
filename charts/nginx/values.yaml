@@ -35,3 +35,9 @@ tolerations: []
 affinity: {}
 configMap:
   nameFile: nginx-config
+issuer:
+  name: letsencrypt-test
+  server: " https://acme-staging-v02.api.letsencrypt.org/directory"
+  email: "vjulianiusv@gmail.com"
+  privateKeySecretRefName: letsencrypt-test
+  class: nginx

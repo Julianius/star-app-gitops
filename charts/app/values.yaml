@@ -24,20 +24,20 @@ deployment:
   limitsMemory: "128Mi"
   limitsCpu: "500m"
 
-ingress:
-  class: nginx
-  issuer: letsencrypt-test
-  name: ingress-star-app
-  host1: "testing.iiig3t-g00diii.tk"
-  host2: "www.testing.iiig3t-g00diii.tk"
-  secretName: tls-secret-test
+#ingress:
+#  class: nginx
+#  issuer: letsencrypt-test
+#  name: ingress-star-app
+#  host1: "testing.iiig3t-g00diii.tk"
+#  host2: "www.testing.iiig3t-g00diii.tk"
+#  secretName: tls-secret-test
 
-issuer:
-  name: letsencrypt-test
-  server: " https://acme-staging-v02.api.letsencrypt.org/directory"
-  email: "vjulianiusv@gmail.com"
-  privateKeySecretRefName: letsencrypt-test
-  class: nginx
+#issuer:
+#  name: letsencrypt-test
+#  server: " https://acme-staging-v02.api.letsencrypt.org/directory"
+#  email: "vjulianiusv@gmail.com"
+#  privateKeySecretRefName: letsencrypt-test
+#  class: nginx
 
 #pvc:
 #  name: "standard"
