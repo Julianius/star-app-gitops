@@ -4,10 +4,10 @@ persistence:
   storageClass: 'standard-release'
 auth:
   enabled: true
-  rootPassword: "7M4iXDQkai"
-  username: "5aTFFOfmeW"
-  password: "dO16e2qM10"
-  database: "stardb"
+  rootPassword: other
+  username: test
+  password: test
+  database: restdb
 
 pvc:
   name: "standard-release"
