@@ -1801,7 +1801,7 @@ prometheus:
     loadBalancerSourceRanges: []
     ## Service type
     ##
-    type: ClusterIP
+    type: LoadBalancer
 
     sessionAffinity: ""
 
