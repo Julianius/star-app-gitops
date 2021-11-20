@@ -13,7 +13,7 @@ deployment:
   image: 751307794059.dkr.ecr.eu-west-3.amazonaws.com/star-app:release-1.0.5
 
 secret:
-  mongodburl: bW9uZ29kYjovLzVhVEZGT2ZtZVc6ZE8xNmUycU0xMEBtb25nb2RiLXJlbGVhc2UtMC5tb25nb2RiLXJlbGVhc2UtaGVhZGxlc3M6MjcwMTcsbW9uZ29kYi1yZWxlYXNlLTEubW9uZ29kYi1yZWxlYXNlLWhlYWRsZXNzOjI3MDE3L0hLVWdmWVQyazk/YXV0aFNvdXJjZT1IS1VnZllUMms5
+  mongodburl: bW9uZ29kYjovLzVhVEZGT2ZtZVc6ZE8xNmUycU0xMEBtb25nb2RiLXJlbGVhc2UtMC5tb25nb2RiLXJlbGVhc2UtaGVhZGxlc3M6MjcwMTcsbW9uZ29kYi1yZWxlYXNlLTEubW9uZ29kYi1yZWxlYXNlLWhlYWRsZXNzOjI3MDE3L3N0YXJkYj9hdXRoU291cmNlPXN0YXJkYg==
 
 #pvc:
 #  name: "standard-release"
