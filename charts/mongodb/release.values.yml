@@ -4,10 +4,10 @@ persistence:
   storageClass: 'standard-release'
 auth:
   enabled: true
-  rootPassword: PHF7Q4q9ZLWViORNFe
-  username: 0rPS7UxtfE7UMMbDo1
-  password: nDkX3Df11aP333P3tr
-  database: cPrUb1FYBOK6E3iATw
+  rootPassword: 7M4iXDQkai
+  username: 5aTFFOfmeW
+  password: dO16e2qM10
+  database: HKUgfYT2k9
 
 pvc:
   name: "standard-release"
