@@ -25,9 +25,9 @@ pvc:
   volumeBindingMode: "Immediate"
 
 # Request smaller persistent volumes.
-volumeClaimTemplate:
-  accessModes: [ "ReadWriteOnce" ]
-  storageClassName: "standard-logging"
-  resources:
-    requests:
-      storage: 100M
+#volumeClaimTemplate:
+#  accessModes: [ "ReadWriteOnce" ]
+#  storageClassName: "standard-logging"
+#  resources:
+#    requests:
+#      storage: 100M
