@@ -14,10 +14,20 @@ resources:
     cpu: "1000m"
     memory: "512M"
 
+pvc:
+  name: "standard-logging"
+  annotationIsDefaultClass: "true"
+  provisioner: "kubernetes.io/aws-ebs"
+  type: "gp2"
+  reclaimPolicy: "Delete"
+  allowVolumeExpansion: "true"
+  mountOptions: "debug"
+  volumeBindingMode: "Immediate"
+
 # Request smaller persistent volumes.
 volumeClaimTemplate:
   accessModes: [ "ReadWriteOnce" ]
-  storageClassName: "standard"
+  storageClassName: "standard-logging"
   resources:
     requests:
       storage: 100M
