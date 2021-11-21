@@ -1,0 +1,33 @@
+replicaCount: 1
+image:
+  repository: 751307794059.dkr.ecr.eu-west-3.amazonaws.com/star-app-nginx:latest
+imagePullSecrets: []
+nameOverride: ''
+fullnameOverride: ''
+serviceAccount:
+  create: true
+  annotations: {}
+  name: ''
+podAnnotations: {}
+podSecurityContext: {}
+securityContext: {}
+service:
+  type: ClusterIP
+  port: 80
+resources: {}
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 100
+  targetCPUUtilizationPercentage: 80
+nodeSelector: {}
+tolerations: []
+affinity: {}
+configMap:
+  nameFile: nginx-config
+issuer:
+  name: letsencrypt-test
+  server: " https://acme-staging-v02.api.letsencrypt.org/directory"
+  email: "vjulianiusv@gmail.com"
+  privateKeySecretRefName: letsencrypt-test
+  class: nginx

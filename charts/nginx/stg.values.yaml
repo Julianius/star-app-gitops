@@ -1,0 +1,10 @@
+image:
+  repository: 751307794059.dkr.ecr.eu-west-3.amazonaws.com/star-app-nginx:latest
+
+ingress:
+  class: nginx
+  issuer: letsencrypt-stg
+  name: ingress-star-app
+  host1: "www.stg.iiig3t-g00diii.tk"
+  host2: "stg.iiig3t-g00diii.tk"
+  secretName: tls-secret-stg
