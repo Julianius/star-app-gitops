@@ -5,8 +5,8 @@ image:
 
 service:
   name: star-app
-  type: LoadBalancer
-  port: 5000
+  type: ClusterIP
+  port: 80
   selector: star-app
 
 deployment:
