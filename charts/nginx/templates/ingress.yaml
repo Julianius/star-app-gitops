@@ -21,7 +21,7 @@ spec:
               service:
                 name: nginx
                 port: 
-                  number: 5000
+                  number: 80
     - host: {{ .Values.ingress.host2 }}
       http:
         paths:
@@ -31,4 +31,4 @@ spec:
               service:
                 name: nginx
                 port: 
-                  number: 5000
+                  number: 80

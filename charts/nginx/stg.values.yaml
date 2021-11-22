@@ -3,8 +3,8 @@ image:
 
 ingress:
   class: nginx
-  issuer: letsencrypt-stg
+  issuer: letsencrypt-stg-test
   name: ingress-star-app
-  host1: "www.stg.iiig3t-g00diii.tk"
-  host2: "stg.iiig3t-g00diii.tk"
-  secretName: tls-secret-stg
+  host1: "stg.star-app.xyz"
+  host2: "www.stg.star-app.xyz"
+  secretName: tls-secret-stg-test
