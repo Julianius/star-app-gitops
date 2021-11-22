@@ -9,6 +9,11 @@ service:
   port: 80
   selector: star-app
 
+serviceAccount:
+  create: true
+  annotations: {}
+  name: ''
+
 deployment:
   name: star-app
   app: star-app
