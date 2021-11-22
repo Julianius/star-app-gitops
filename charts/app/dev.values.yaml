@@ -5,8 +5,8 @@ ingress:
   class: nginx
   issuer: letsencrypt-dev-test
   name: ingress-star-app
-  host1: "dev.iiig3t-g00diii.tk"
-  host2: "www.dev.iiig3t-g00diii.tk"
+  host1: "dev.star-app.xyz"
+  host2: "www.dev.star-app.xyz"
   secretName: tls-secret-dev-test
 
 deployment:

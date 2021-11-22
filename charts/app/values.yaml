@@ -28,8 +28,8 @@ ingress:
   class: nginx
   issuer: letsencrypt-test
   name: ingress-star-app
-  host1: "testing.iiig3t-g00diii.tk"
-  host2: "www.testing.iiig3t-g00diii.tk"
+  host1: "star-app.xyz"
+  host2: "www.star-app.xyz"
   secretName: tls-secret-test
 
 issuer:

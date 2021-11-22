@@ -5,8 +5,8 @@ ingress:
   class: nginx
   issuer: letsencrypt-stg-test
   name: ingress-star-app
-  host1: "stg.iiig3t-g00diii.tk"
-  host2: "www.stg.iiig3t-g00diii.tk"
+  host1: "stg.star-app.xyz"
+  host2: "www.stg.star-app.xyz"
   secretName: tls-secret-stg-test
 
 deployment:
