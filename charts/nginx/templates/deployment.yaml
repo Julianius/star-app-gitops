@@ -32,6 +32,7 @@ spec:
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: {{ .Values.image.repository }}
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
           volumeMounts:
             - name: {{ .Values.configMap.nameFile }}
               mountPath: /etc/nginx/nginx.conf
